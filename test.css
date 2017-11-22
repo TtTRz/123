@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+h1{
+    color:greenyellow;
+    text-align:center;
+}
+p{
+    text-align: center;
+    font-size:20px;
+    color:greenyellow;
+    font-family: 'Hiragino Sans GB',Arial,sans-serif;
+}
+.para1
+{
+    text-align:center;
+    color:yellow;
+}
+#para2
+{
+    text-align:center;
+    color:yellow;
+}
