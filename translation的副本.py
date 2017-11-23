@@ -1,14 +1,18 @@
 import re
 def go_split(s,symbol):
 	symbol = "[" + symbol + "]+"
-	#拼正则表达式
+	
 	result = re.split(symbol,s)
 	#一次性分割字符串
 	return [ x for x in result if x ]
 	#去除空字符
-sentence = input()
+f=open('123.txt','r')
+sentence=''
+for i in f:
+    sentence+=i
+    #
 sentence = sentence.lower() #字母小写
-symbol = '.,;:?! '
+symbol = '.:!,?; '
 sentence = go_split(sentence,symbol)
 sentence1 = list(set(sentence))
 
