@@ -6,7 +6,7 @@ def go_split(s,symbol):
 	#一次性分割字符串
 	return [ x for x in result if x ]
 	#去除空字符
-f=open('123.txt','r')
+f=open('text.txt','r')
 sentence=''
 for i in f:
     sentence+=i
@@ -17,11 +17,11 @@ sentence = go_split(sentence,symbol)
 sentence1 = list(set(sentence))
 
 dir1={}
-for i in range (len(sentence1)) :
-	dir1[sentence1[i]]=0
-	for j in range (len(sentence)) :
-		if(sentence1[i]==sentence[j]):
-			dir1[sentence1[i]]+=1
+for i in sentence1 :
+	dir1[i]=0
+	for j in sentence :
+		if(i==j):
+			dir1[i]+=1
 for key in dir1.keys():
 	print("{0}:{1}".format(key,dir1[key]))
 
